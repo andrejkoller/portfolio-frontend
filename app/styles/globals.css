@@ -1,0 +1,51 @@
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+
+  --athanasa-bg: #ffffff;
+  --athanasa-color: #000000;
+
+  --fadinghell-bg: #8c111f;
+  --fadinghell-color: #ffffff;
+
+  --prettyswing-bg: #0d3c8c;
+  --prettyswing-color: #ffffff;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: var(--font-league-spartan), sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

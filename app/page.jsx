@@ -14,21 +14,12 @@ import { useRouter } from "next/navigation";
 
 const projects = [
   {
-    title: "Music",
-    href: "/music",
+    title: "Athanasa",
+    href: "/athanasa",
     imageSrc: "/images/placeholder-image.png",
-    imageAlt: "Music",
-    bg: "var(--music-bg)",
-    color: "var(--music-color)",
-    disabled: false,
-  },
-  {
-    title: "Work",
-    href: "/work",
-    imageSrc: "/images/placeholder-image.png",
-    imageAlt: "Work",
-    bg: "var(--work-bg)",
-    color: "var(--work-color)",
+    imageAlt: "Athanasa",
+    bg: "var(--athanasa-bg)",
+    color: "var(--athanasa-color)",
     disabled: false,
   },
   {
@@ -36,17 +27,17 @@ const projects = [
     href: "/fadinghell",
     imageSrc: "/images/placeholder-image.png",
     imageAlt: "Fading Hell",
-    bg: "var(--fading-hell-bg)",
-    color: "var(--fading-hell-color)",
+    bg: "var(--fadinghell-bg)",
+    color: "var(--fadinghell-color)",
     disabled: false,
   },
   {
-    title: "Omelia",
-    href: "/omelia",
+    title: "Pretty Swing",
+    href: "/prettyswing",
     imageSrc: "/images/placeholder-image.png",
-    imageAlt: "Omelia",
-    bg: "var(--omelia-bg)",
-    color: "var(--omelia-color)",
+    imageAlt: "Pretty Swing",
+    bg: "var(--prettyswing-bg)",
+    color: "var(--prettyswing-color)",
     disabled: false,
   },
 ];
@@ -97,7 +88,7 @@ export default function Home() {
         router.push(href);
       }, 1000);
     },
-    [setTransitionColor, setIsTransitioning, setIsNavigating, router]
+    [setTransitionColor, setIsTransitioning, setIsNavigating, router],
   );
 
   useEffect(() => {
@@ -244,9 +235,6 @@ export default function Home() {
               <h1>
                 <ScrambleTextInitial texts={"Andrej Koller"} delay={0} />
               </h1>
-              <div className={styles.logo}>
-                <ThemeSwitcher />
-              </div>
             </div>
 
             <div
@@ -356,7 +344,7 @@ export default function Home() {
                             handleProjectImageMouseEnter(
                               project.bg,
                               project.color,
-                              index
+                              index,
                             )
                           }
                           onMouseLeave={() =>

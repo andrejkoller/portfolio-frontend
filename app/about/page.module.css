@@ -37,7 +37,7 @@
 }
 
 .titleContainer .titleContent .title {
-  font-size: 14.4vw;
+  font-size: 16rem;
   font-weight: 400;
   opacity: 0;
   transform: scale(1.15) translateY(40px);
@@ -92,7 +92,7 @@
 }
 
 .aboutContainer .infoSection .infoTitle h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 1em;
   margin: 0;
@@ -140,7 +140,7 @@
 }
 
 .aboutContainer .figure2 h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 1em;
   margin: 0;

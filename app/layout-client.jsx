@@ -2,7 +2,7 @@
 
 import LoadingScreen from "@/components/loading-screen/loading-screen";
 import { useEffect, useRef, useState } from "react";
-import "./globals.css";
+import "./styles/globals.css";
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
